@@ -6,3 +6,10 @@ __pycache__/
 .pdm-python
 .venv/
 .vscode/
+.env
+instance/
+*.db
+*.sqlite3
+*.log
+.DS_Store
+Thumbs.db
