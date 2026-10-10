@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Over The Garden Fence</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+</head>
+
+
+<body>
+
+    <div class="page-container">
+
+        <nav class="top-nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How to Play</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Over The Garden Fence</h1>
+            <p>Jump, jump as high as you can!</p>
+
+            <a href="{{ url_for('room') }}" class="start-btn">
+                Start Game
+            </a>
+        </main>
+
+        <footer>
+            <p>© 2026 Over The Garden Fence Escape Room</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+

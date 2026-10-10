@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Over The Garden Fence</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/room.css') }}">
+    
+</head>
+
+
+<body style="--bg_url: url('../images/roombg.jpg');">
+
+    <div class="page-container">
+
+        <nav class="top-nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How to Play</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="gamebtn-grid">
+                <button class="game_btn" data-game="1">Game 1</button>
+                <button class="game_btn" data-game="2">Game 2</button>
+                <button class="game_btn" data-game="3">Game 3</button>
+                <button class="game_btn" data-game="4">Game 4</button>
+                <button class="game_btn" data-game="5">Game 5</button>
+                <button class="game_btn" data-game="6">Game 6</button>
+            </div>
+            
+        </main>
+
+        <div id="game_modal" class="modal">
+
+            <div class="modal_content">
+                <button class="close_btn" id="close_modal">&times;</button>
+
+                <h2 id="game-title">Game 1</h2>
+                
+                <div id="game-content"></div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Over The Garden Fence Escape Room</p>
+        </footer>
+
+        <script src="{{url_for('static',filename='js/room.js')}}"></script>
+
+    </div>
+
+</body>
+
+</html>

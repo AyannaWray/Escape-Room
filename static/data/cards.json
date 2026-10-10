@@ -1,0 +1,23 @@
+[
+
+    {"image": "static/images/cardmatch_img/frog.png",
+        "name": "frog"
+    },
+    {"image": "static/images/cardmatch_img/lanttern.png",
+        "name": "lanttern"
+    },
+
+    {"image": "static/images/cardmatch_img/monsterbell.png",
+        "name": "monsterbell"
+    },
+    {"image": "static/images/cardmatch_img/pumpkin.png",
+        "name": "pumpkin"
+    },
+    {"image": "static/images/cardmatch_img/rock.png",
+        "name": "rock"
+    },
+    {"image": "static/images/cardmatch_img/tape.png",
+        "name": "tape"
+    }
+    
+]

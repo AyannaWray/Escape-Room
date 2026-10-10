@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+
+    font-family: Delius, "Cherry Cream Soda", cursive;
+    background-image: var(--bg_url, url("../images/garden.jpg"));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0 2rem;
+
+    background-color: #c58c7b;
+    z-index: 1000;
+}
+
+/* 
+.nav-brand span {
+        color: #3d2016;
+} */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 0.75rem;
+}
+
+.nav-links a {
+    color: #0b0a0a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.25s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 90px 20px 20px;
+
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.gamebtn-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: transparent;
+    gap: 50px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.game_btn{
+    background-color: #c58c7b;
+    color: #ffc0cb;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+
+.game_btn:hover {
+    background-color: #b77a68;
+    transform: translateY(-2px);
+}
+
+
+.modal {
+    display: none;
+
+    position: fixed;
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content {
+    position: relative;
+
+    width: 80%;
+    max-width: 700px;
+    min-height: 400px;
+
+    background-color: #FFC0CB;
+
+    border-radius: 15px;
+    
+   /* #f1e5d0 */
+
+    padding: 40px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    text-align: center;
+
+    overflow: hidden;
+    max-height: 90vh;
+}
+
+
+.close_btn {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #3d2016;
+}
+
+
+.close_btn:hover {
+    color: #c58c7b;
+}
+
+
+
+
+h1 {
+    font-size: 3.5rem;
+    color: #3d2016;
+    margin-bottom: 12px;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.45);
+
+}
+
+main p {
+    font-size: 1.3rem;
+    color: #3d2016;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+
+
+
+footer {
+    background-color: rgba(92, 58, 46, 0.78);
+    color: antiquewhite;
+    height: 60px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Allows navigation bar to adapt on mobile devices*/
+
+@media (max-width: 700px) {
+
+    .top-nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav-brand {
+        margin-bottom: 0.75rem;
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.8rem;
+    }
+
+    main {
+        padding-top: 140px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    main p {
+        font-size: 1.1rem;
+    }
+}
+
+.card-game-frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.paclady-frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
